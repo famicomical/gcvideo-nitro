@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name gcvideo_lite-rescue)(type Legacy)(uri ${KIPRJMOD}/gcvideo_lite-rescue.lib)(options "")(descr ""))
+  (lib (name machxo2-256-tq100)(type Legacy)(uri ${KIPRJMOD}/machxo2-256-tq100.lib)(options "")(descr ""))
+  (lib (name cdk3404)(type Legacy)(uri ${KIPRJMOD}/cdk3404.lib)(options "")(descr ""))
+  (lib (name conn_11x2)(type Legacy)(uri ${KIPRJMOD}/conn_11x2.lib)(options "")(descr ""))
+  (lib (name eec)(type Legacy)(uri ${KIPRJMOD}/eec.lib)(options "")(descr ""))
+)
