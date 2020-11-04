@@ -1,3 +1,8 @@
+#GCVideo Nitro#
+
+GCVideo adapted for the IS NITRO Nintendo DS developer kits. 
+Should also be a compact internal solution for Gamecube.
+
 # GCVideo #
 
 GCVideo is a small series of FPGA boards and VHDL projects
@@ -23,31 +28,7 @@ should contain README.md files with further information.
     other people will probably offer ready-made boards or modding
     services.
 
-    GCVideo-DVI is based on a readily-available, commercial FPGA
-    development board, so you could just buy that, flash it and
-    install it yourself (or find someone to do it for you).
-
-1. But why don't you just sell it?  
-    Building hardware to be sold is a lot of work and requires much
-    time that I'd rather use for something more
-    interesting. Furthermore, the local laws require quite a bit of
-    paperwork and investment to legally sell electronic devices that
-    you build and I'd prefer not to deal with all of that.
-
-1. You said your prototype came from OSHPark, so you have at least
-    three boards. Can't you sell me one of them?  
-    No, they're all accounted for already.
-
-1. Why did you use that weird Video-DAC, it's a non-stock part at
-    Digikey!<br>
-    It wasn't when I designed the board some months ago... Instead it
-    was the cheapest 24-bit video DAC available. It shouldn't be hard
-    to adapt the design to a different DAC as long as it has 24 bit
-    parallel input and a single-pumped clock. For YPbPr output, the
-    DAC also needs to be able to generate a small offset on the Y line
-    so that syncs can be generated below the blanking level.
-
-1. Uh, it says XO2-256 in the schematic, but XO2-640 in the BOM. Which
+2. Uh, it says XO2-256 in the schematic, but XO2-640 in the BOM. Which
     is the correct one?  
     The original plan was to use an XO2-256, but adding the color
     space conversion for RGB output increased the size of the design
@@ -55,7 +36,7 @@ should contain README.md files with further information.
     only pins available on that chip are used, so a slightly cheaper
     Component-only version can be built.
 
-1. What about line-doubling?  
+3. What about line-doubling?  
     GCVideo Lite (the analog version) uses the smallest FPGA that
     could fit everything needed, but this chip does not have enough
     BlockRAM available to generate a line-doubled picture. It could be
@@ -68,7 +49,7 @@ should contain README.md files with further information.
 
 
 
-# Licence #
+# License #
 
 <pre>
 Copyright (C) 2014-2020, Ingo Korb &lt;ingo@akana.de&gt;
