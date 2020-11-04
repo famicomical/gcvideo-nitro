@@ -1,4 +1,4 @@
-#GCVideo Nitro#
+# GCVideo Nitro #
 
 GCVideo adapted for the IS NITRO Nintendo DS developer kits. 
 Should also be a compact internal solution for Gamecube.
