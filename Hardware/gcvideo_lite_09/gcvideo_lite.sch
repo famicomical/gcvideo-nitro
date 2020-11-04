@@ -14,50 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L conn_11x2:CONN_11X2 P1
-U 1 1 53AFCB94
-P 1900 1550
-F 0 "P1" H 1900 2150 60  0000 C CNN
-F 1 "CONN_11X2" V 1900 1500 50  0000 C CNN
-F 2 "" H 1900 1500 60  0001 C CNN
-F 3 "" H 1900 1500 60  0000 C CNN
-	1    1900 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L gcvideo_lite-rescue:+3.3V #PWR01
-U 1 1 53AFCBC3
-P 850 900
-F 0 "#PWR01" H 850 860 30  0001 C CNN
-F 1 "+3.3V" H 850 1010 30  0000 C CNN
-F 2 "" H 850 900 60  0000 C CNN
-F 3 "" H 850 900 60  0000 C CNN
-	1    850  900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L gcvideo_lite-rescue:GND #PWR02
-U 1 1 53AFCBD8
-P 2800 2200
-F 0 "#PWR02" H 2800 2200 30  0001 C CNN
-F 1 "GND" H 2800 2130 30  0001 C CNN
-F 2 "" H 2800 2200 60  0000 C CNN
-F 3 "" H 2800 2200 60  0000 C CNN
-	1    2800 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L gcvideo_lite-rescue:GND #PWR03
-U 1 1 53AFCBEC
-P 950 1750
-F 0 "#PWR03" H 950 1750 30  0001 C CNN
-F 1 "GND" H 950 1680 30  0001 C CNN
-F 2 "" H 950 1750 60  0000 C CNN
-F 3 "" H 950 1750 60  0000 C CNN
-	1    950  1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L machxo2-256-tq100:MachXO2-256-TQ100 U1
 U 1 1 53AFCC20
 P 8050 1750
@@ -134,58 +90,6 @@ F 3 "" H 7400 2350 60  0000 C CNN
 	1    7400 2350
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1500 1250
-NoConn ~ 2300 1250
-Text Label 1400 1150 2    60   ~ 0
-CSEL
-Text Label 1400 1350 2    60   ~ 0
-VDATA0
-Text Label 1400 1450 2    60   ~ 0
-VDATA1
-Text Label 2400 1450 0    60   ~ 0
-VDATA2
-Text Label 2400 1550 0    60   ~ 0
-VDATA3
-Text Label 1400 1650 2    60   ~ 0
-VDATA4
-Text Label 1400 1750 2    60   ~ 0
-VDATA5
-Text Label 2400 1750 0    60   ~ 0
-VDATA6
-Text Label 2400 1850 0    60   ~ 0
-VDATA7
-Text Label 2400 1050 0    60   ~ 0
-CLK54
-Text Label 2400 2050 0    60   ~ 0
-BCLK
-$Comp
-L power:PWR_FLAG #FLG06
-U 1 1 53AFD915
-P 800 1850
-F 0 "#FLG06" H 800 1945 30  0001 C CNN
-F 1 "PWR_FLAG" H 800 2030 30  0000 C CNN
-F 2 "" H 800 1850 60  0000 C CNN
-F 3 "" H 800 1850 60  0000 C CNN
-	1    800  1850
-	0    -1   -1   0   
-$EndComp
-Text Notes 1450 1050 2    60   ~ 0
-CableDetect
-Text Label 1400 1950 2    60   ~ 0
-LRCK
-Text Label 1400 2050 2    60   ~ 0
-ADATA
-$Comp
-L power:PWR_FLAG #FLG09
-U 1 1 53AFE63F
-P 2800 1050
-F 0 "#FLG09" H 2800 1145 30  0001 C CNN
-F 1 "PWR_FLAG" H 2800 1230 30  0000 C CNN
-F 2 "" H 2800 1050 60  0000 C CNN
-F 3 "" H 2800 1050 60  0000 C CNN
-	1    2800 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7550 1400 7400 1400
 Wire Wire Line
@@ -242,58 +146,6 @@ Connection ~ 8800 2050
 Wire Wire Line
 	8800 2300 8550 2300
 Connection ~ 8800 2200
-Wire Wire Line
-	1400 1150 1500 1150
-Wire Wire Line
-	2300 1450 2400 1450
-Wire Wire Line
-	2300 1550 2400 1550
-Wire Wire Line
-	1400 1350 1500 1350
-Wire Wire Line
-	1400 1450 1500 1450
-Wire Wire Line
-	1400 1650 1500 1650
-Wire Wire Line
-	1400 1750 1500 1750
-Wire Wire Line
-	2400 1750 2300 1750
-Wire Wire Line
-	2300 1850 2400 1850
-Wire Wire Line
-	2400 1050 2300 1050
-Wire Wire Line
-	2800 1050 2800 1150
-Wire Wire Line
-	2800 1950 2300 1950
-Wire Wire Line
-	2800 1650 2300 1650
-Connection ~ 2800 1950
-Wire Wire Line
-	2800 1350 2300 1350
-Connection ~ 2800 1650
-Wire Wire Line
-	2800 1150 2300 1150
-Connection ~ 2800 1350
-Wire Wire Line
-	2400 2050 2300 2050
-Wire Wire Line
-	1500 1050 850  1050
-Wire Wire Line
-	850  900  850  1050
-Wire Wire Line
-	800  1850 850  1850
-Connection ~ 850  1050
-Wire Wire Line
-	950  1750 950  1550
-Wire Wire Line
-	950  1550 1500 1550
-Connection ~ 850  1850
-Wire Wire Line
-	1400 2050 1500 2050
-Wire Wire Line
-	1500 1950 1400 1950
-Connection ~ 2800 1150
 $Comp
 L gcvideo_lite-rescue:+3.3V #PWR012
 U 1 1 53B020F6
@@ -335,43 +187,6 @@ Wire Wire Line
 	3600 1200 3500 1200
 Wire Wire Line
 	3500 1100 3500 1200
-$Comp
-L gcvideo_lite-rescue:CONN_6 P4
-U 1 1 53B025B8
-P 3650 6350
-F 0 "P4" V 3600 6350 60  0000 C CNN
-F 1 "CONN_6" V 3700 6350 60  0000 C CNN
-F 2 "" H 3650 6350 60  0001 C CNN
-F 3 "" H 3650 6350 60  0000 C CNN
-	1    3650 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L gcvideo_lite-rescue:GND #PWR014
-U 1 1 53B028D4
-P 3150 6700
-F 0 "#PWR014" H 3150 6700 30  0001 C CNN
-F 1 "GND" H 3150 6630 30  0001 C CNN
-F 2 "" H 3150 6700 60  0000 C CNN
-F 3 "" H 3150 6700 60  0000 C CNN
-	1    3150 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L gcvideo_lite-rescue:+3.3V #PWR015
-U 1 1 53B028E8
-P 3150 6000
-F 0 "#PWR015" H 3150 5960 30  0001 C CNN
-F 1 "+3.3V" H 3150 6110 30  0000 C CNN
-F 2 "" H 3150 6000 60  0000 C CNN
-F 3 "" H 3150 6000 60  0000 C CNN
-	1    3150 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 6100 3150 6000
-Wire Wire Line
-	3150 6600 3150 6700
 Wire Wire Line
 	1900 6200 3300 6200
 Wire Wire Line
@@ -629,34 +444,12 @@ Text Label 4600 6150 2    60   ~ 0
 EXTVSYNCn
 Text Label 4600 7200 2    60   ~ 0
 EXTCSYNCn
-$Comp
-L gcvideo_lite-rescue:CONN_4 P3
-U 1 1 53B04DC8
-P 6600 6100
-F 0 "P3" V 6550 6100 50  0000 C CNN
-F 1 "CONN_4" V 6650 6100 50  0000 C CNN
-F 2 "" H 6600 6100 60  0001 C CNN
-F 3 "" H 6600 6100 60  0000 C CNN
-	1    6600 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 6250 6250 6250
 Wire Wire Line
 	6250 6050 6050 6050
 Wire Wire Line
 	6050 6050 6050 5800
-$Comp
-L gcvideo_lite-rescue:GND #PWR018
-U 1 1 53B050A2
-P 6150 6450
-F 0 "#PWR018" H 6150 6450 30  0001 C CNN
-F 1 "GND" H 6150 6380 30  0001 C CNN
-F 2 "" H 6150 6450 60  0000 C CNN
-F 3 "" H 6150 6450 60  0000 C CNN
-	1    6150 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4600 5800 4800 5800
 Wire Wire Line
@@ -808,16 +601,14 @@ Connection ~ 10200 1500
 $Comp
 L gcvideo_lite-rescue:GND #PWR022
 U 1 1 53B06BE6
-P 10650 2200
-F 0 "#PWR022" H 10650 2200 30  0001 C CNN
-F 1 "GND" H 10650 2130 30  0001 C CNN
-F 2 "" H 10650 2200 60  0000 C CNN
-F 3 "" H 10650 2200 60  0000 C CNN
-	1    10650 2200
+P 10650 2250
+F 0 "#PWR022" H 10650 2250 30  0001 C CNN
+F 1 "GND" H 10650 2180 30  0001 C CNN
+F 2 "" H 10650 2250 60  0000 C CNN
+F 3 "" H 10650 2250 60  0000 C CNN
+	1    10650 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10650 2100 10650 2200
 Wire Wire Line
 	9450 2100 9700 2100
 Wire Wire Line
@@ -1130,10 +921,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 1700 6050 1850
 Wire Wire Line
-	6150 6450 6150 5950
-Wire Wire Line
-	6150 5950 6250 5950
-Wire Wire Line
 	2000 5700 1900 5700
 Wire Wire Line
 	2000 5800 1900 5800
@@ -1141,8 +928,6 @@ Wire Wire Line
 	2000 5900 1900 5900
 Wire Wire Line
 	2000 6000 1900 6000
-Text Label 850  1350 1    60   ~ 0
-VCC
 Wire Wire Line
 	6200 3250 6100 3250
 Wire Wire Line
@@ -1151,23 +936,8 @@ Wire Wire Line
 	1900 5500 2000 5500
 Wire Wire Line
 	2000 5400 1900 5400
-$Comp
-L gcvideo_lite-rescue:R R6
-U 1 1 53B5C819
-P 6050 6750
-F 0 "R6" V 6130 6750 40  0000 C CNN
-F 1 "100" V 6057 6751 40  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 6750 30  0001 C CNN
-F 3 "" H 6050 6750 30  0000 C CNN
-	1    6050 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 7000 6050 7200
 Wire Wire Line
 	6050 7200 5700 7200
-Wire Wire Line
-	6050 6250 6050 6500
 $Comp
 L gcvideo_lite-rescue:R R7
 U 1 1 53B5CCB5
@@ -1179,10 +949,6 @@ F 3 "" H 2400 6850 30  0000 C CNN
 	1    2400 6850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3150 6600 3300 6600
-Wire Wire Line
-	3150 6100 3300 6100
 Wire Wire Line
 	2800 7400 2800 7300
 Wire Wire Line
@@ -1259,18 +1025,6 @@ Wire Wire Line
 Wire Wire Line
 	8800 2200 8800 2300
 Wire Wire Line
-	2800 1950 2800 2200
-Wire Wire Line
-	2800 1650 2800 1950
-Wire Wire Line
-	2800 1350 2800 1650
-Wire Wire Line
-	850  1050 850  1850
-Wire Wire Line
-	850  1850 1500 1850
-Wire Wire Line
-	2800 1150 2800 1350
-Wire Wire Line
 	3500 1200 3500 1400
 Wire Wire Line
 	5550 1600 5550 1700
@@ -1330,35 +1084,6 @@ Wire Wire Line
 	2800 7300 2800 7200
 Wire Wire Line
 	3000 6300 1900 6300
-$Comp
-L gcvideo_lite-rescue:CONN_5 P2
-U 1 1 53AFFAF4
-P 10850 3250
-F 0 "P2" V 10800 3250 50  0000 C CNN
-F 1 "CONN_5" V 10900 3250 50  0000 C CNN
-F 2 "" H 10850 3250 60  0001 C CNN
-F 3 "" H 10850 3250 60  0000 C CNN
-	1    10850 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L gcvideo_lite-rescue:GND #PWR011
-U 1 1 53AFFCE9
-P 10350 3650
-F 0 "#PWR011" H 10350 3650 30  0001 C CNN
-F 1 "GND" H 10350 3580 30  0001 C CNN
-F 2 "" H 10350 3650 60  0000 C CNN
-F 3 "" H 10350 3650 60  0000 C CNN
-	1    10350 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 3050 10450 3050
-Wire Wire Line
-	10350 3350 10450 3350
-Wire Wire Line
-	10350 3150 10450 3150
-Connection ~ 10350 3350
 $Comp
 L gcvideo_lite-rescue:GND #PWR07
 U 1 1 53AFDEA2
@@ -1430,10 +1155,6 @@ Wire Wire Line
 	10600 6250 10600 5700
 Wire Wire Line
 	10600 5700 10450 5700
-Wire Wire Line
-	10350 3150 10350 3350
-Wire Wire Line
-	10350 3350 10350 3650
 $Comp
 L gcvideo_lite-rescue:C C17
 U 1 1 53AFE804
@@ -1508,19 +1229,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 5000 9250 5000
 Wire Wire Line
-	9900 3350 10250 3350
-Wire Wire Line
-	9900 3400 9900 3350
-Wire Wire Line
-	9700 3250 10450 3250
-Wire Wire Line
-	9700 3400 9700 3250
-Wire Wire Line
-	9500 3150 10250 3150
-Wire Wire Line
 	9500 3400 9500 3150
-Wire Wire Line
-	9050 4000 9050 4100
 Wire Wire Line
 	9900 4000 9900 3900
 Wire Wire Line
@@ -1592,12 +1301,6 @@ F 3 "" H 9600 6000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10250 3450 10450 3450
-Wire Wire Line
-	10250 3350 10250 3450
-Wire Wire Line
-	10250 3150 10250 3050
-Wire Wire Line
 	8750 4600 9350 4600
 Connection ~ 9050 4000
 Wire Wire Line
@@ -1625,24 +1328,17 @@ Text Label 9250 4500 2    60   ~ 0
 DACSYNCn
 Text Label 9250 5000 2    60   ~ 0
 DACCLOCK
-Connection ~ 9900 3350
-Wire Wire Line
-	8350 3350 9900 3350
-Connection ~ 9700 3250
-Wire Wire Line
-	8300 3250 9700 3250
-Connection ~ 9500 3150
 Wire Wire Line
 	8500 3150 9500 3150
 $Comp
 L gcvideo_lite-rescue:GND #PWR010
 U 1 1 53AFF67C
-P 9050 4100
-F 0 "#PWR010" H 9050 4100 30  0001 C CNN
-F 1 "GND" H 9050 4030 30  0001 C CNN
-F 2 "" H 9050 4100 60  0000 C CNN
-F 3 "" H 9050 4100 60  0000 C CNN
-	1    9050 4100
+P 9050 4150
+F 0 "#PWR010" H 9050 4150 30  0001 C CNN
+F 1 "GND" H 9050 4080 30  0001 C CNN
+F 2 "" H 9050 4150 60  0000 C CNN
+F 3 "" H 9050 4150 60  0000 C CNN
+	1    9050 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2005,7 +1701,6 @@ NoConn ~ 6200 3250
 NoConn ~ 2000 5400
 NoConn ~ 2000 5500
 NoConn ~ 2000 5600
-NoConn ~ 2000 5700
 NoConn ~ 2000 5800
 NoConn ~ 2000 5900
 NoConn ~ 2000 6000
@@ -2042,4 +1737,176 @@ F 3 "" H 10850 5200 60  0000 C CNN
 	1    10850 5200
 	1    0    0    -1  
 $EndComp
+Text Label 2000 5700 0    50   ~ 0
+SPDIF
+$Comp
+L Connector:Conn_01x03_Female P3
+U 1 1 5FAC8E5C
+P 6450 6150
+F 0 "P3" H 6478 6176 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 6478 6085 50  0000 L CNN
+F 2 "" H 6450 6150 50  0001 C CNN
+F 3 "~" H 6450 6150 50  0001 C CNN
+	1    6450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female P2
+U 1 1 5FAC9FF4
+P 10550 3250
+F 0 "P2" H 10578 3276 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 10578 3185 50  0000 L CNN
+F 2 "" H 10550 3250 50  0001 C CNN
+F 3 "~" H 10550 3250 50  0001 C CNN
+	1    10550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3150 10350 3150
+Connection ~ 9500 3150
+Wire Wire Line
+	6050 6250 6050 7200
+$Comp
+L Connector:Conn_01x04_Male P4
+U 1 1 5FB4D52A
+P 3500 6400
+F 0 "P4" H 3472 6282 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 3472 6373 50  0000 R CNN
+F 2 "" H 3500 6400 50  0001 C CNN
+F 3 "~" H 3500 6400 50  0001 C CNN
+	1    3500 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x16_Male P1
+U 1 1 5FB8AC20
+P 1450 1650
+F 0 "P1" H 1422 1532 50  0000 R CNN
+F 1 "Conn_01x16_Male" H 1422 1623 50  0000 R CNN
+F 2 "" H 1450 1650 50  0001 C CNN
+F 3 "~" H 1450 1650 50  0001 C CNN
+	1    1450 1650
+	-1   0    0    1   
+$EndComp
+Text Label 1150 2250 2    60   ~ 0
+VDATA0
+Wire Wire Line
+	1150 2250 1250 2250
+Text Label 1150 2150 2    60   ~ 0
+VDATA1
+Wire Wire Line
+	1150 2150 1250 2150
+Text Label 1150 2050 2    60   ~ 0
+VDATA2
+Wire Wire Line
+	1250 2050 1150 2050
+Text Label 1150 1950 2    60   ~ 0
+VDATA3
+Wire Wire Line
+	1250 1950 1150 1950
+Text Label 1150 1850 2    60   ~ 0
+VDATA4
+Wire Wire Line
+	1150 1850 1250 1850
+Text Label 1150 1750 2    60   ~ 0
+VDATA5
+Wire Wire Line
+	1150 1750 1250 1750
+Text Label 1150 1650 2    60   ~ 0
+VDATA6
+Text Label 1150 1550 2    60   ~ 0
+VDATA7
+Wire Wire Line
+	1150 1650 1250 1650
+Wire Wire Line
+	1250 1550 1150 1550
+Text Label 1150 1450 2    60   ~ 0
+CSEL
+Wire Wire Line
+	1150 1450 1250 1450
+NoConn ~ 1250 1350
+NoConn ~ 1250 1250
+NoConn ~ 1250 1150
+Text Label 1150 1050 2    60   ~ 0
+LRCK
+Wire Wire Line
+	1250 1050 1150 1050
+Text Label 1150 950  2    60   ~ 0
+ADATA
+Wire Wire Line
+	1150 950  1250 950 
+Text Label 1150 850  2    60   ~ 0
+BCLK
+Wire Wire Line
+	1150 850  1250 850 
+Wire Wire Line
+	2950 1650 2950 1500
+Wire Wire Line
+	2300 1500 2950 1500
+Text Notes 2350 1560 0    60   ~ 0
+CableDetect
+$Comp
+L gcvideo_lite-rescue:+3.3V #PWR01
+U 1 1 53AFCBC3
+P 2950 1650
+F 0 "#PWR01" H 2950 1610 30  0001 C CNN
+F 1 "+3.3V" H 2950 1760 30  0000 C CNN
+F 2 "" H 2950 1650 60  0000 C CNN
+F 3 "" H 2950 1650 60  0000 C CNN
+	1    2950 1650
+	-1   0    0    1   
+$EndComp
+Connection ~ 2950 1500
+Text Label 2950 1200 3    60   ~ 0
+VCC
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 53AFD915
+P 2950 950
+F 0 "#FLG06" H 2950 1045 30  0001 C CNN
+F 1 "PWR_FLAG" H 2950 1130 30  0000 C CNN
+F 2 "" H 2950 950 60  0000 C CNN
+F 3 "" H 2950 950 60  0000 C CNN
+	1    2950 950 
+	1    0    0    -1  
+$EndComp
+Text Label 2400 1400 0    60   ~ 0
+CLK54
+Wire Wire Line
+	2400 1400 2300 1400
+NoConn ~ 1250 2350
+Wire Wire Line
+	2950 950  2950 1500
+$Comp
+L Connector:Conn_01x02_Male P5
+U 1 1 5FF86DDE
+P 2100 1400
+F 0 "P5" H 2208 1581 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2208 1490 50  0000 C CNN
+F 2 "" H 2100 1400 50  0001 C CNN
+F 3 "~" H 2100 1400 50  0001 C CNN
+	1    2100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4000 9050 4150
+NoConn ~ 8300 4200
+NoConn ~ 8300 5250
+NoConn ~ 8300 3150
+Wire Wire Line
+	10650 2100 10650 2250
+Wire Wire Line
+	8350 3350 9900 3350
+Wire Wire Line
+	9900 3400 9900 3350
+Wire Wire Line
+	8300 3250 9700 3250
+Wire Wire Line
+	9700 3400 9700 3250
+Connection ~ 9700 3250
+Wire Wire Line
+	9700 3250 10350 3250
+Wire Wire Line
+	10350 3350 9900 3350
+Connection ~ 9900 3350
 $EndSCHEMATC

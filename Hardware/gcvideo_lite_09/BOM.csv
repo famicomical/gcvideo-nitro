@@ -15,7 +15,7 @@ Id,Designator,Package,Quantity,Designation,Digikey part no,Notes
 14,R6,SMD_Packages:SM0805,1,100,311-100CRCT-ND,or any other 50-200 ohm 0805 resistor - just a cautionary device on the Csync line
 15,"R7,R8",SMD_Packages:SM0805,2,4k7,311-4.70KCRCT-ND,or any other 1k-10k ohm 0805 resistor (pullups/pulldowns)
 16,U1,SMD_Packages:TQFP_100,1,MachXO2-640-TQ100,220-1492-ND,"It's still an XO2-256 in the schematic, but an XO2-640 is required!"
-17,U2,Housings_QFP:lqfp-48,1,CDK3404,1016-1935-ND ,
+17,U2,Housings_QFP:lqfp-48,1,ADV7125,1016-1935-ND ,
 18,U4,Housings_SOIC:SOIC-14_Narrow,1,74LVC14,296-1699-1-ND,
 ,,,,,,
 ,,,,,,
