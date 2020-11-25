@@ -187,14 +187,6 @@ Wire Wire Line
 	3600 1200 3500 1200
 Wire Wire Line
 	3500 1100 3500 1200
-Wire Wire Line
-	1900 6200 3300 6200
-Wire Wire Line
-	3300 6300 3000 6300
-Wire Wire Line
-	1900 6400 3300 6400
-Wire Wire Line
-	3300 6500 1900 6500
 Text Label 2150 6200 0    60   ~ 0
 TMS
 Text Label 2150 6300 0    60   ~ 0
@@ -588,7 +580,7 @@ Text Label 2050 3750 0    60   ~ 0
 VDATA6
 Text Label 2050 3950 0    60   ~ 0
 VDATA7
-Text Label 2800 5000 0    60   ~ 0
+Text Label 2700 5900 0    60   ~ 0
 CLK54
 Text Label 2050 3150 0    60   ~ 0
 CSEL
@@ -728,21 +720,6 @@ F 3 "" H 4400 1200 60  0000 C CNN
 $EndComp
 Connection ~ 4300 1200
 $Comp
-L gcvideo_lite-rescue:R R5
-U 1 1 53B0AFEF
-P 2700 5650
-F 0 "R5" V 2780 5650 40  0000 C CNN
-F 1 "75" V 2707 5651 40  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2630 5650 30  0001 C CNN
-F 3 "" H 2700 5650 30  0000 C CNN
-	1    2700 5650
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2800 5000 2700 5000
-Wire Wire Line
-	2700 5000 2700 5400
-$Comp
 L gcvideo_lite-rescue:JUMPER JP1
 U 1 1 53B0BB84
 P 2400 7200
@@ -843,8 +820,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 7300 2800 7300
 Connection ~ 2800 7300
-Wire Wire Line
-	3000 6650 3000 6300
 Connection ~ 3000 6300
 Wire Wire Line
 	7400 2100 7400 2350
@@ -1584,7 +1559,7 @@ U 1 1 5FAC9FF4
 P 10250 3250
 F 0 "P2" H 10278 3276 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 10278 3185 50  0000 L CNN
-F 2 "" H 10250 3250 50  0001 C CNN
+F 2 "pads:rgb" H 10250 3250 50  0001 C CNN
 F 3 "~" H 10250 3250 50  0001 C CNN
 	1    10250 3250
 	1    0    0    -1  
@@ -1592,28 +1567,6 @@ $EndComp
 Wire Wire Line
 	9200 3150 10050 3150
 Connection ~ 9200 3150
-$Comp
-L Connector:Conn_01x04_Male P4
-U 1 1 5FB4D52A
-P 3500 6400
-F 0 "P4" H 3472 6282 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 3472 6373 50  0000 R CNN
-F 2 "" H 3500 6400 50  0001 C CNN
-F 3 "~" H 3500 6400 50  0001 C CNN
-	1    3500 6400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x16_Male P1
-U 1 1 5FB8AC20
-P 1450 1650
-F 0 "P1" H 1422 1532 50  0000 R CNN
-F 1 "Conn_01x16_Male" H 1422 1623 50  0000 R CNN
-F 2 "" H 1450 1650 50  0001 C CNN
-F 3 "~" H 1450 1650 50  0001 C CNN
-	1    1450 1650
-	-1   0    0    1   
-$EndComp
 Text Label 1150 2250 2    60   ~ 0
 VDATA0
 Wire Wire Line
@@ -1650,9 +1603,6 @@ Text Label 1150 1450 2    60   ~ 0
 CSEL
 Wire Wire Line
 	1150 1450 1250 1450
-NoConn ~ 1250 1350
-NoConn ~ 1250 1250
-NoConn ~ 1250 1150
 Text Label 1150 1050 2    60   ~ 0
 LRCK
 Wire Wire Line
@@ -1665,44 +1615,6 @@ Text Label 1150 850  2    60   ~ 0
 BCLK
 Wire Wire Line
 	1150 850  1250 850 
-Wire Wire Line
-	2950 1650 2950 1500
-Wire Wire Line
-	2300 1500 2950 1500
-Text Notes 2350 1560 0    60   ~ 0
-CableDetect
-$Comp
-L gcvideo_lite-rescue:+3.3V #PWR01
-U 1 1 53AFCBC3
-P 2950 1650
-F 0 "#PWR01" H 2950 1610 30  0001 C CNN
-F 1 "+3.3V" H 2950 1760 30  0000 C CNN
-F 2 "" H 2950 1650 60  0000 C CNN
-F 3 "" H 2950 1650 60  0000 C CNN
-	1    2950 1650
-	-1   0    0    1   
-$EndComp
-Connection ~ 2950 1500
-Text Label 2950 1200 3    60   ~ 0
-VCC
-$Comp
-L power:PWR_FLAG #FLG06
-U 1 1 53AFD915
-P 2950 950
-F 0 "#FLG06" H 2950 1045 30  0001 C CNN
-F 1 "PWR_FLAG" H 2950 1130 30  0000 C CNN
-F 2 "" H 2950 950 60  0000 C CNN
-F 3 "" H 2950 950 60  0000 C CNN
-	1    2950 950 
-	1    0    0    -1  
-$EndComp
-Text Label 2400 1400 0    60   ~ 0
-CLK54
-Wire Wire Line
-	2400 1400 2300 1400
-NoConn ~ 1250 2350
-Wire Wire Line
-	2950 950  2950 1500
 Wire Wire Line
 	8750 4000 8750 4150
 NoConn ~ 8000 4200
@@ -1734,7 +1646,7 @@ U 1 1 5FAC8E5C
 P 5800 2100
 F 0 "P3" H 5828 2126 50  0000 L CNN
 F 1 "Conn_01x03_Female" H 5828 2035 50  0000 L CNN
-F 2 "" H 5800 2100 50  0001 C CNN
+F 2 "pads:sync" H 5800 2100 50  0001 C CNN
 F 3 "~" H 5800 2100 50  0001 C CNN
 	1    5800 2100
 	1    0    0    -1  
@@ -1748,23 +1660,12 @@ EXTVSYNCn
 Text Label 5400 2000 2    60   ~ 0
 EXTHSYNCn
 $Comp
-L Connector:Conn_01x02_Male P5
-U 1 1 5FF86DDE
-P 2100 1400
-F 0 "P5" H 2208 1581 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 2208 1490 50  0000 C CNN
-F 2 "" H 2100 1400 50  0001 C CNN
-F 3 "~" H 2100 1400 50  0001 C CNN
-	1    2100 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female P6
+L Connector:Conn_01x01_Female P5
 U 1 1 602534FD
 P 5650 1650
-F 0 "P6" H 5678 1676 50  0000 L CNN
+F 0 "P5" H 5678 1676 50  0000 L CNN
 F 1 "Conn_01x01_Female" H 5678 1585 50  0000 L CNN
-F 2 "" H 5650 1650 50  0001 C CNN
+F 2 "pads:spdif" H 5650 1650 50  0001 C CNN
 F 3 "~" H 5650 1650 50  0001 C CNN
 	1    5650 1650
 	1    0    0    -1  
@@ -1782,4 +1683,161 @@ Wire Wire Line
 Connection ~ 8550 5500
 Wire Wire Line
 	8550 5500 9050 5500
+$Comp
+L gcvideo_lite-rescue:+3.3V #PWR0105
+U 1 1 5FBA050D
+P 750 1100
+F 0 "#PWR0105" H 750 1060 30  0001 C CNN
+F 1 "+3.3V" H 750 1210 30  0000 C CNN
+F 2 "" H 750 1100 60  0000 C CNN
+F 3 "" H 750 1100 60  0000 C CNN
+	1    750  1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1150 750  1150
+Wire Wire Line
+	750  1150 750  1100
+Wire Wire Line
+	1250 1350 750  1350
+Wire Wire Line
+	750  1350 750  1150
+Connection ~ 750  1150
+$Comp
+L gcvideo_lite-rescue:GND #PWR0106
+U 1 1 5FBD9993
+P 1150 2450
+F 0 "#PWR0106" H 1150 2450 30  0001 C CNN
+F 1 "GND" H 1150 2380 30  0001 C CNN
+F 2 "" H 1150 2450 60  0000 C CNN
+F 3 "" H 1150 2450 60  0000 C CNN
+	1    1150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x16_Male P1
+U 1 1 5FB8AC20
+P 1450 1650
+F 0 "P1" H 1422 1532 50  0000 R CNN
+F 1 "Conn_01x16_Male" H 1422 1623 50  0000 R CNN
+F 2 "pads:DOL" H 1450 1650 50  0001 C CNN
+F 3 "~" H 1450 1650 50  0001 C CNN
+	1    1450 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 2350 1150 2350
+Wire Wire Line
+	1150 2350 1150 2450
+Text Label 1250 1250 2    50   ~ 0
+CLK27
+$Comp
+L Oscillator:NB3N502 U3
+U 1 1 5FC322B4
+P 5450 5350
+F 0 "U3" H 5450 6031 50  0000 C CNN
+F 1 "NB3N502" H 5450 5940 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 4600 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NB3N502-D.PDF" H 5500 4500 50  0001 C CNN
+	1    5450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L gcvideo_lite-rescue:+3.3V #PWR0107
+U 1 1 5FC32C11
+P 5450 4550
+F 0 "#PWR0107" H 5450 4510 30  0001 C CNN
+F 1 "+3.3V" H 5450 4660 30  0000 C CNN
+F 2 "" H 5450 4550 60  0000 C CNN
+F 3 "" H 5450 4550 60  0000 C CNN
+	1    5450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4550 5450 4850
+$Comp
+L gcvideo_lite-rescue:GND #PWR0108
+U 1 1 5FC4F68A
+P 5450 5900
+F 0 "#PWR0108" H 5450 5900 30  0001 C CNN
+F 1 "GND" H 5450 5830 30  0001 C CNN
+F 2 "" H 5450 5900 60  0000 C CNN
+F 3 "" H 5450 5900 60  0000 C CNN
+	1    5450 5900
+	1    0    0    -1  
+$EndComp
+Text Label 6350 5450 0    60   ~ 0
+CLK54
+$Comp
+L gcvideo_lite-rescue:R R5
+U 1 1 5FC6BC9E
+P 6100 5450
+F 0 "R5" V 6180 5450 40  0000 C CNN
+F 1 "33" V 6107 5451 40  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 5450 30  0001 C CNN
+F 3 "" H 6100 5450 30  0000 C CNN
+	1    6100 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 5450 5050 5550
+Connection ~ 5050 5550
+Text Label 5050 5250 2    50   ~ 0
+CLK27
+Wire Wire Line
+	1900 6200 3300 6200
+Wire Wire Line
+	3300 6300 3000 6300
+Wire Wire Line
+	1900 6400 3300 6400
+Wire Wire Line
+	3000 6650 3000 6300
+Wire Wire Line
+	3300 6500 1900 6500
+$Comp
+L Connector:Conn_01x06_Male P4
+U 1 1 5FCF15FA
+P 3500 6400
+F 0 "P4" H 3472 6282 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 3472 6373 50  0000 R CNN
+F 2 "pads:jtag" H 3500 6400 50  0001 C CNN
+F 3 "~" H 3500 6400 50  0001 C CNN
+	1    3500 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 5850 5450 5900
+Wire Wire Line
+	5450 5850 5050 5850
+Wire Wire Line
+	5050 5550 5050 5850
+Connection ~ 5450 5850
+$Comp
+L gcvideo_lite-rescue:GND #PWR0109
+U 1 1 5FD6CD08
+P 3300 6700
+F 0 "#PWR0109" H 3300 6700 30  0001 C CNN
+F 1 "GND" H 3300 6630 30  0001 C CNN
+F 2 "" H 3300 6700 60  0000 C CNN
+F 3 "" H 3300 6700 60  0000 C CNN
+	1    3300 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6600 3300 6700
+$Comp
+L gcvideo_lite-rescue:+3.3V #PWR0110
+U 1 1 5FD89DEE
+P 3300 5950
+F 0 "#PWR0110" H 3300 5910 30  0001 C CNN
+F 1 "+3.3V" H 3300 6060 30  0000 C CNN
+F 2 "" H 3300 5950 60  0000 C CNN
+F 3 "" H 3300 5950 60  0000 C CNN
+	1    3300 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6100 3300 5950
+NoConn ~ 5050 5350
+NoConn ~ 5850 5350
 $EndSCHEMATC

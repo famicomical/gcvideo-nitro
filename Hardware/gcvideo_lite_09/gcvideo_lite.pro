@@ -1,4 +1,4 @@
-update=11/3/2020 12:21:52 PM
+update=11/20/2020 6:27:57 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -14,7 +14,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=gcvideo_lite.net
 CopperLayerCount=4
 BoardThickness=1.6002
 AllowMicroVias=0
@@ -60,7 +60,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.0508
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
